@@ -74,6 +74,11 @@ int start()
     
     while (pos >= 0) {
         if (pos == Bars - 2) ExtMapBuffer1[pos + 1] = Close[pos + 1];        
+        if (pos == Bars - 2) ExtMapBuffer2[pos + 1] = Close[pos + 1];        
+        if (pos == Bars - 2) ExtMapBuffer3[pos + 1] = Close[pos + 1];        
+        if (pos == Bars - 2) ExtMapBuffer4[pos + 1] = Close[pos + 1];        
+        if (pos == Bars - 2) ExtMapBuffer5[pos + 1] = Close[pos + 1];        
+        if (pos == Bars - 2) ExtMapBuffer6[pos + 1] = Close[pos + 1];        
         ExtMapBuffer1[pos] = Close[pos] * pr[0] + ExtMapBuffer1[pos + 1] * (1 - pr[0]);
         ExtMapBuffer2[pos] = Close[pos] * pr[1] + ExtMapBuffer2[pos + 1] * (1 - pr[1]);
         ExtMapBuffer3[pos] = Close[pos] * pr[2] + ExtMapBuffer3[pos + 1] * (1 - pr[2]);
